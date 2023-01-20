@@ -1,7 +1,5 @@
 <!DOCTYPE HTML>
-
 <html>
-
 <head>
 
     <meta charset="utf-8">
@@ -16,7 +14,6 @@
         let ncmb = new NCMB(appKey, clientKey);
         // 本アプリで使うクラスの指定。const は定数の宣言。変更できない変数と思えば良い。
         const db = "m";
-
         function fetchAll() {
             let TestDataClass = ncmb.DataStore(db);
             TestDataClass.order("name", false).fetchAll()
@@ -100,7 +97,7 @@
         <button class="btn" onclick="searchprice()">price</button>
         <button class="btn" onclick="searchpriceGT()">price &gt</button>
     </div>
-    <div id="message">message area</div>
+    <div id="message">検索結果</div>
 </body>
 
 </html>
