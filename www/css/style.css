@@ -1,6 +1,6 @@
 /**/
 body {
-  background-color: aqua;
+  background-color: red;
 }
 h1 {
   background-color: yellow;
@@ -34,7 +34,7 @@ input {
 
 #message {
   border-style: solid;
-  border-color: grey;
+  border-color: blue;
 }
 
 table {
