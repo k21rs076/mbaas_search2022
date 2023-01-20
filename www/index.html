@@ -34,10 +34,10 @@
             })
         }
 
-        function searchLevel() {
+        function searchprice() {
             let TestDataClass = ncmb.DataStore(db);
-            let level = parseInt($("#level").val());
-            TestDataClass.equalTo("level", level).fetchAll()
+            let price = parseInt($("#price").val());
+            TestDataClass.equalTo("price", price).fetchAll()
             .then(function(results) {
                 showResults(results);
             })
@@ -89,16 +89,16 @@
         <input id="name" type="text" placeholder="monster name">
     </div>
     <div>
-        <label for="level">level:</label>
-        <input id="level" type="number" placeholder="monster level">
+        <label for="price">price:</label>
+        <input id="price" type="number" placeholder="price">
     </div>
     <div id="button">
         <button class="btn" onclick="fetchAll()">Fetch All</button>
         <button class="btn" onclick="searchName()">Name</button>
         <br>
-        <button class="btn" onclick="searchLevelLT()">Level &lt</button>
-        <button class="btn" onclick="searchLevel()">Level</button>
-        <button class="btn" onclick="searchLevelGT()">Level &gt</button>
+        <button class="btn" onclick="searchpricelLT()">price &lt</button>
+        <button class="btn" onclick="searchprice()">price</button>
+        <button class="btn" onclick="searchpriceGT()">price &gt</button>
     </div>
     <div id="message">message area</div>
 </body>
